@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.CreateStudentController">
+    <stylesheets>
+        <URL value="@createstudent.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="name" focusTraversable="false" layoutX="24.0" layoutY="75.0" promptText="Name" />
+      <Button layoutX="79.0" layoutY="323.0" mnemonicParsing="false" onAction="#createStudent" text="Submit" />
+      <Text layoutX="246.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Form" />
+      <TextField fx:id="lastName" focusTraversable="false" layoutX="24.0" layoutY="119.0" promptText="Last Name" />
+      <TextField fx:id="city" focusTraversable="false" layoutX="24.0" layoutY="165.0" promptText="City" />
+      <TextField fx:id="country" focusTraversable="false" layoutX="24.0" layoutY="210.0" promptText="Country" />
+      <Button fx:id="goBack1" layoutX="24.0" layoutY="16.0" mnemonicParsing="false" onAction="#backToLogin" text="Go back" />
+      <PasswordField fx:id="password" layoutX="24.0" layoutY="253.0" promptText="Password" />
+      <Text fx:id="fillOut" fill="#eb0909" layoutX="51.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill out all the fields" />
+   </children>
+</AnchorPane>
